@@ -254,7 +254,7 @@ export default {
           }
           .text {
             font-size: 20px;
-             width: 500px;
+            width: 500px;
             color: #87949e;
             line-height: 30px;
             padding-bottom: 50px;

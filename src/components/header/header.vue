@@ -16,7 +16,7 @@
               <i class="icon"></i>
             </span>
             <ul class="select-list" v-show="selectFlag">
-              <li class="select-item" @click.stop="toggleCountry('中文')">中文</li>
+              <li class="select-item" @click.stop="toggleCountry('简体中文')">简体中文</li>
               <li class="select-item" @click.stop="toggleCountry('English')">English</li>
             </ul>
           </div>
@@ -36,7 +36,7 @@ export default {
         title: "AITIME"
       },
       selectFlag: false,
-      currentCountry: "中文"
+      currentCountry: "简体中文"
     };
   },
   methods: {
