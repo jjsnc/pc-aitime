@@ -14,7 +14,7 @@
         <li class="item">
           <div class="iconfont iconfont-item iconshujuzhongxin"></div>
           <h3 class="title-3">AITIME数据</h3>
-          <p class="text">海量数据,实时处理,秒级决策,驱 动大数据智能化的信用风险决策</p>
+          <p class="text">打通线上、线下高质量数据,数万 维度刻画信用风险画像。</p>
         </li>
         <li class="item">
           <div class="iconfont iconfont-item icon1huojian"></div>
@@ -40,7 +40,7 @@
       <ul class="list">
         <li class="item">
           <div class="left-area">
-            <div class="iconfont iconfont-item iconmianxinggouwuche"></div>
+            <div class="iconfont iconfont-item left iconmianxinggouwuche"></div>
           </div>
           <div class="right-area">
             <h3 class="title-5">市场合作</h3>
@@ -50,15 +50,16 @@
         </li>
         <li class="item">
           <div class="left-area">
-            <div class="iconfont iconfont-item iconbangongshenling"></div>
+            <div class="iconfont iconfont-item right iconbangongshenling"></div>
           </div>
           <div class="right-area">
-            <h3 class="title-5">市场合作</h3>
-            <p class="text">媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们。</p>
+            <h3 class="title-5">商务合作</h3>
+            <p class="text">商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们</p>
             <address class="address">邮箱：xxxxxxx 电话：xxxxxx</address>
           </div>
         </li>
       </ul>
+      <div class="company-info">有关 AITIME 的服务，请参阅服务条款、隐私和安全声明</div>
     </section>
   </div>
 </template>
@@ -88,7 +89,7 @@ export default {
       top: 45%;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 10px;
+      font-size: 20px;
       color: #fff;
     }
     .more-btn {
@@ -97,15 +98,15 @@ export default {
       left: 50%;
       transform: translateX(-50%);
       display: block;
-      width: 92px;
-      height: 24px;
-      line-height: 24px;
+      width: 184px;
+      height: 48px;
+      line-height: 48px;
       background: rgba(0, 182, 203, 0);
       border: 1px solid rgba(255, 255, 255, 1);
-      font-size: 7px;
+      font-size: 17px;
       text-align: center;
       color: #fff;
-      border-radius: 15px;
+      border-radius: 30px;
       text-decoration: none;
     }
     .more-icon {
@@ -113,10 +114,10 @@ export default {
       top: 80%;
       left: 50%;
       transform: translateX(-50%);
-      width: 20px;
-      height: 16px;
+      width: 40px;
+      height: 32px;
       background: url("../../public/images/形状 9@2x.png");
-      background-size: 20px 16px;
+      background-size: 40px 32px;
       cursor: pointer;
     }
   }
@@ -125,7 +126,7 @@ export default {
     padding-bottom: 220px;
     > .title-3 {
       position: relative;
-      font-size: 24px;
+      font-size: 48px;
       color: #576671;
       text-align: center;
       text-align: center;
@@ -138,14 +139,14 @@ export default {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 15px;
+        width: 30px;
         height: 1px;
         background: #17daa3;
       }
     }
     .title-6 {
       padding-top: 30px;
-      font-size: 9px;
+      font-size: 18px;
       color: #87949e;
       text-align: center;
       padding-bottom: 150px;
@@ -154,34 +155,34 @@ export default {
       display: flex;
       .item {
         flex: 1;
-        width: 25px;
         box-sizing: border-box;
         .iconfont-item {
           display: block;
           transition: all 0.3s ease;
-          width: 62px;
-          height: 62px;
+          width: 124px;
+          height: 124px;
           margin: 0 auto;
-          line-height: 62px;
+          line-height: 124px;
           border-radius: 50%;
           color: #87949e;
           background: rgba(135, 145, 158, 0.15);
           text-align: center;
+          font-size: 36px;
           &:hover {
             color: #fff;
             background: #17daa3;
           }
         }
         .title-3 {
-          font-size: 11px;
+          font-size: 22px;
           color: #000000;
           padding: 65px 0 36px;
           text-align: center;
         }
         .text {
-          font-size: 8px;
+          font-size: 16px;
           color: #87949e;
-          width: 180px;
+          width: 240px;
           margin: 0 auto;
           line-height: 22px;
         }
@@ -189,13 +190,11 @@ export default {
     }
   }
   .contact-section {
-    border: 1px solid #dedede;
     padding-bottom: 70px;
     > .title-3 {
       position: relative;
-      font-size: 24px;
+      font-size: 48px;
       color: #576671;
-      text-align: center;
       text-align: center;
       padding-bottom: 36px;
       &::before {
@@ -205,17 +204,17 @@ export default {
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 15px;
+        width: 30px;
         height: 1px;
         background: #17daa3;
       }
     }
   }
   .footer-section {
-    height: 260px;
     background: #edeff1;
     .list {
-      padding-top: 120px;
+      padding-top: 140px;
+      padding-bottom: 220px;
       display: flex;
       justify-content: center;
       align-items: middle;
@@ -223,14 +222,59 @@ export default {
         flex: 1;
         display: flex;
         justify-content: center;
-        align-items: middle;
-        .iconfont-item{
-          width: 48px;
-          height: 48px;
+        .iconfont-item {
+          width: 96px;
+          height: 96px;
+          line-height: 96px;
           text-align: center;
-          line-height: 48px;
-        } 
+          font-size: 40px;
+          border: 1px solid #17daa3;
+          color: #17daa3;
+          background: #fff;
+          border-radius: 50%;
+        }
+        .left-area {
+          padding-top: 50px;
+          .iconfont-item.left {
+            box-sizing: border-box;
+            padding-right: 6px;
+          }
+          .iconfont-item.right {
+            box-sizing: border-box;
+            padding-left: 10px;
+          }
+        }
+        .right-area {
+          padding-left: 60px;
+          .title-5 {
+            font-size: 40px;
+            color: #576671;
+            text-align: center;
+            padding-bottom: 60px;
+          }
+          .text {
+            font-size: 20px;
+             width: 500px;
+            color: #87949e;
+            line-height: 30px;
+            padding-bottom: 50px;
+          }
+          .address {
+            font-size: 20px;
+            color: #87949e;
+            line-height: 25px;
+            font-style: inherit;
+          }
+        }
       }
+    }
+    .company-info {
+      height: 60px;
+      line-height: 60px;
+      background: #15c492;
+      color: #fff;
+      font-size: 7px;
+      text-align: center;
     }
   }
 }

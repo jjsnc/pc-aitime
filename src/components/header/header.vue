@@ -2,7 +2,7 @@
   <div class="header-com">
     <div class="wrap">
       <div class="left-area">
-        <img class="img" src="../../../public/images/AITIME@2x.png" width="72px;height:14px;" />
+        <img class="img" src="../../../public/images/AITIME@2x.png" width="144px;height:28px;" />
       </div>
       <div class="middle-area"></div>
       <div class="right-area">
@@ -87,7 +87,6 @@ export default {
           padding-right: 76px;
           color: #fff;
           font-size: 16px;
-          transform: scale(0.5);
           cursor: pointer;
           vertical-align: top;
           font-weight: bold;
@@ -99,17 +98,16 @@ export default {
           box-sizing: border-box;
           position: relative;
           display: inline-block;
-          width: 72px;
-          height: 20px;
-          line-height: 20px;
+          width: 104px;
+          height: 32px;
+          line-height: 32px;
           color: #fff;
           border-radius: 3px 3px;
           background: rgba(255, 255, 255, 0.3);
-          font-size: 12px;
+          font-size: 14px;
           text-align: left;
           padding-left: 6px;
           cursor: pointer;
-          transform: scale(.9);
           .text {
             display: inline-block;
             width: 100%;
@@ -118,25 +116,26 @@ export default {
             padding-left: 6px;
             .icon {
               position: absolute;
-              top: 8px;
-              right: 10px;
+              top: 12px;
+              right: 16px;
               width: 0;
               height: 0;
-              border-width: 5px;
+              border-width: 6px;
               border-style: solid;
               border-color: #fff transparent transparent transparent;
             }
           }
           .select-list {
             box-sizing: border-box;
-            width: 72px;
+            width: 104px;
             position: absolute;
             left: 0;
-            top: 20px;
+            top: 32px;
             background: rgba(255, 255, 255, 0.3);
             padding-left: 6px;
             .select-item {
               box-sizing: border-box;
+              font-size: 14px;
               padding-left: 6px;
             }
           }
