@@ -8,8 +8,16 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    redirect: '/home'
   },
+
+  {
+    path: '/home',
+    name: 'home',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+  },
+
+
   {
     path: '/about',
     name: 'about',
@@ -19,7 +27,7 @@ const routes = [
     path: '/solutions',
     name: 'solutions',
     component: () => import(/* webpackChunkName: "about" */ '../views/Solutions.vue')
-  } 
+  }
 ]
 
 const router = new VueRouter({
