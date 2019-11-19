@@ -4,10 +4,10 @@
     <section class="time-section">
       <img class="img" src="../../public/images/AITIME@2x (2).png" />
       <h3 class="title3">运用大数据和人工智能技术，助力信用生活</h3>
-      <a href="javaScript:;" class="more-btn btn">查看更多</a>
+      <a href="#two" class="more-btn btn">查看更多</a>
       <div class="more-icon"></div>
     </section>
-    <section class="product-section">
+    <section class="product-section" id="two">
       <h3 class="title-3">我们的产品</h3>
       <h6 class="title-6">专业/高效/智能化</h6>
       <ul class="list clearfix">
@@ -74,6 +74,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@keyframes bounce-down {
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .home-page {
   position: relative;
   .time-section {
@@ -113,12 +127,13 @@ export default {
       position: absolute;
       top: 80%;
       left: 50%;
-      transform: translateX(-50%);
+      margin-left: -20px;
       width: 40px;
       height: 32px;
       background: url("../../public/images/形状 9@2x.png");
       background-size: 40px 32px;
       cursor: pointer;
+      animation: bounce-down 1s linear infinite;
     }
   }
 
@@ -234,7 +249,7 @@ export default {
           border-radius: 50%;
         }
         .left-area {
-          padding-top: 50px;
+          padding-top: 70px;
           .iconfont-item.left {
             box-sizing: border-box;
             padding-right: 6px;
