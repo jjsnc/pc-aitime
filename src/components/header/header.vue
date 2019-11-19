@@ -2,8 +2,7 @@
   <div class="header-com">
     <div class="wrap">
       <div class="left-area">
-        <img class="img" src="../../assets/logo.png" width="20px;height:14px;" />
-        <span class="title">{{englishData.title}}</span>
+        <img class="img" src="../../../public/images/AITIME@2x.png" width="72px;height:14px;" />
       </div>
       <div class="middle-area"></div>
       <div class="right-area">
@@ -54,12 +53,14 @@ export default {
 
 <style lang="scss" scoped>
 .header-com {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 999;
   .wrap {
     display: flex;
-    border: 1px solid #dedede;
     height: 130px;
     line-height: 130px;
-    background: #000;
     .left-area {
       padding-left: 76px;
       flex: 220px;
