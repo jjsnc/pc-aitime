@@ -1,15 +1,296 @@
 <template>
-  <div class="about">
+  <div class="home-page">
     <myHead></myHead>
-    <h1>This is an solit page</h1>
+    <section class="time-section">
+      <img class="img" src="../../public/images/AITIME@2x (2).png" />
+      <h3 class="title3">运用大数据和人工智能技术，助力信用生活</h3>
+      <a href="#two" class="more-btn btn">查看更多</a>
+      <div class="more-icon"></div>
+    </section>
+    <section class="product-section" id="two">
+      <h3 class="title-3">我们的产品</h3>
+      <h6 class="title-6">专业/高效/智能化</h6>
+      <ul class="list clearfix">
+        <li class="item">
+          <div class="iconfont iconfont-item iconshujuzhongxin"></div>
+          <h3 class="title-3">AITIME数据</h3>
+          <p class="text">打通线上、线下高质量数据,数万 维度刻画信用风险画像。</p>
+        </li>
+        <li class="item">
+          <div class="iconfont iconfont-item icon1huojian"></div>
+          <h3 class="title-3">AITIME引擎</h3>
+          <p class="text">海量数据,实时处理,秒级决策,驱 动大数据智能化的信用风险决策。</p>
+        </li>
+        <li class="item">
+          <div class="iconfont iconfont-item iconwufengxian"></div>
+          <h3 class="title-3">AITIME风控</h3>
+          <p class="text">风控决策贯穿用户借贷的整个周期, 深入贷前、贷中、贷后，构建全...</p>
+        </li>
+        <li class="item">
+          <div class="iconfont iconfont-item iconxingzhuang"></div>
+          <h3 class="title-3">AITIME卫士</h3>
+          <p class="text">为客户提供反欺诈服务，通过三重 检测以验证申请人数据中的不匹...</p>
+        </li>
+      </ul>
+    </section>
+    <section class="contact-section">
+      <h3 class="title-3">联系我们</h3>
+    </section>
+    <section class="footer-section">
+      <ul class="list">
+        <li class="item">
+          <div class="left-area">
+            <div class="iconfont iconfont-item left iconmianxinggouwuche"></div>
+          </div>
+          <div class="right-area">
+            <h3 class="title-5">市场合作</h3>
+            <p class="text">媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们。</p>
+            <address class="address">邮箱：xxxxxxx 电话：xxxxxx</address>
+          </div>
+        </li>
+        <li class="item">
+          <div class="left-area">
+            <div class="iconfont iconfont-item right iconbangongshenling"></div>
+          </div>
+          <div class="right-area">
+            <h3 class="title-5">商务合作</h3>
+            <p class="text">商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们</p>
+            <address class="address">邮箱：xxxxxxx 电话：xxxxxx</address>
+          </div>
+        </li>
+      </ul>
+      <div class="company-info">有关 AITIME 的服务，请参阅服务条款、隐私和安全声明</div>
+    </section>
   </div>
 </template>
 
 <script>
-import myHead from '@/components/header/header';
+import myHead from "@/components/header/header";
 export default {
-    components: {
-      myHead
-    }
-}
+  components: {
+    myHead
+  }
+};
 </script>
+
+<style lang="scss" scoped>
+@keyframes bounce-down {
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.home-page {
+  position: relative;
+  .time-section {
+    position: relative;
+    .img {
+      display: block;
+      max-width: 100%;
+      border: none;
+      outline: none;
+    }
+    .title3 {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      color: #fff;
+    }
+    .more-btn {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 184px;
+      height: 48px;
+      line-height: 48px;
+      background: rgba(0, 182, 203, 0);
+      border: 1px solid rgba(255, 255, 255, 1);
+      font-size: 17px;
+      text-align: center;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+    .more-icon {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      margin-left: -20px;
+      width: 40px;
+      height: 32px;
+      background: url("../../public/images/形状 9@2x.png");
+      background-size: 40px 32px;
+      cursor: pointer;
+      animation: bounce-down 1s linear infinite;
+    }
+  }
+
+  .product-section {
+    padding-bottom: 220px;
+    > .title-3 {
+      position: relative;
+      font-size: 48px;
+      color: #576671;
+      text-align: center;
+      text-align: center;
+      padding-top: 130px;
+      padding-bottom: 36px;
+      &::before {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 1px;
+        background: #17daa3;
+      }
+    }
+    .title-6 {
+      padding-top: 30px;
+      font-size: 18px;
+      color: #87949e;
+      text-align: center;
+      padding-bottom: 150px;
+    }
+    .list {
+      display: flex;
+      .item {
+        flex: 1;
+        box-sizing: border-box;
+        .iconfont-item {
+          display: block;
+          transition: all 0.3s ease;
+          width: 124px;
+          height: 124px;
+          margin: 0 auto;
+          line-height: 124px;
+          border-radius: 50%;
+          color: #87949e;
+          background: rgba(135, 145, 158, 0.15);
+          text-align: center;
+          font-size: 36px;
+          &:hover {
+            color: #fff;
+            background: #17daa3;
+          }
+        }
+        .title-3 {
+          font-size: 22px;
+          color: #000000;
+          padding: 65px 0 36px;
+          text-align: center;
+        }
+        .text {
+          font-size: 16px;
+          color: #87949e;
+          width: 240px;
+          margin: 0 auto;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .contact-section {
+    padding-bottom: 70px;
+    > .title-3 {
+      position: relative;
+      font-size: 48px;
+      color: #576671;
+      text-align: center;
+      padding-bottom: 36px;
+      &::before {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 1px;
+        background: #17daa3;
+      }
+    }
+  }
+  .footer-section {
+    background: #edeff1;
+    .list {
+      padding-top: 140px;
+      padding-bottom: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: middle;
+      .item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        .iconfont-item {
+          width: 96px;
+          height: 96px;
+          line-height: 96px;
+          text-align: center;
+          font-size: 40px;
+          border: 1px solid #17daa3;
+          color: #17daa3;
+          background: #fff;
+          border-radius: 50%;
+        }
+        .left-area {
+          padding-top: 70px;
+          .iconfont-item.left {
+            box-sizing: border-box;
+            padding-right: 6px;
+          }
+          .iconfont-item.right {
+            box-sizing: border-box;
+            padding-left: 10px;
+          }
+        }
+        .right-area {
+          padding-left: 60px;
+          .title-5 {
+            font-size: 40px;
+            color: #576671;
+            text-align: center;
+            padding-bottom: 60px;
+          }
+          .text {
+            font-size: 20px;
+            width: 500px;
+            color: #87949e;
+            line-height: 30px;
+            padding-bottom: 50px;
+          }
+          .address {
+            font-size: 20px;
+            color: #87949e;
+            line-height: 25px;
+            font-style: inherit;
+          }
+        }
+      }
+    }
+    .company-info {
+      height: 60px;
+      line-height: 60px;
+      background: #15c492;
+      color: #fff;
+      font-size: 7px;
+      text-align: center;
+    }
+  }
+}
+</style>
