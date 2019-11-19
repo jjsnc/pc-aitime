@@ -7,9 +7,9 @@
       <div class="middle-area"></div>
       <div class="right-area">
         <ul class="list">
-          <router-link tag="li" class="item" to="/home">HOME</router-link>
-          <router-link tag="li" class="item" to="/solutions">SOLUTIONS</router-link>
-          <router-link tag="li" class="item" to="/about">COMPANY</router-link>
+          <router-link tag="li" class="item" to="/home">首页</router-link>
+          <router-link tag="li" class="item" to="/solutions">解决方案</router-link>
+          <router-link tag="li" class="item" to="/about">关于我们</router-link>
           <div class="selct-area" @click="showSelect">
             <span class="text">
               {{currentCountry}}

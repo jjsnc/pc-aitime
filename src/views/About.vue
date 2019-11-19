@@ -1,14 +1,50 @@
 <template>
   <div class="home-page">
     <myHead></myHead>
-    <section class="time">
-          <h3> 我们的团队</h3>
-          <p class="info">AITIME 打造下一代智能大数据平台，运用业内认可的模型算法和技术帮助泛亚洲区域客户实现传统业务 的智能化转型，极大提升数据</p>
-          <p class="info"></p>
+    <section class="time-section">
+      <img class="img" src="../../public/images/Multiply@2x.png" />
+      <h3 class="title3">我们的团队</h3>
+      <p
+        class="text-1 text"
+      >AITIME 打造下一代智能大数据平台，运用业内认可的模型算法和技术帮助泛亚洲区域客户实现传统业务 的智能化转型，极大提升数据与信息处理能力，用智能推动产业和社会进步。</p>
+      <p class="text-2 text">团队由来自全球顶尖FinTech公司的产品专家、大数据风控专家，移动互联网领域的技术大牛和经验丰富 的客户服务专家组成。</p>
     </section>
-    <section class="mission">使命</section>
-    <section class="contact">联系我们</section>
-    <section class="footer">footer</section>
+    <section class="mission-section">
+      <img class="img" src="../../public/images/Multiply3@2x.png" />
+      <h3 class="title3">我们的愿景使命</h3>
+      <p class="text-1 text">使命</p>
+      <p class="text-2 text">用人工智能技术改造和重塑商业、为用户提供更好的信息、产品和服务</p>
+      <p class="text-3 text">愿景</p>
+      <p class="text-4 text">创造智能AI时代</p>
+    </section>
+    <section class="contact-section">
+      <h3 class="title-3">联系我们</h3>
+    </section>
+    <section class="footer-section">
+      <ul class="list">
+        <li class="item">
+          <div class="left-area">
+            <div class="iconfont iconfont-item left iconmianxinggouwuche"></div>
+          </div>
+          <div class="right-area">
+            <h3 class="title-5">市场合作</h3>
+            <p class="text">媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们。</p>
+            <address class="address">邮箱：xxxxxxx 电话：xxxxxx</address>
+          </div>
+        </li>
+        <li class="item">
+          <div class="left-area">
+            <div class="iconfont iconfont-item right iconbangongshenling"></div>
+          </div>
+          <div class="right-area">
+            <h3 class="title-5">商务合作</h3>
+            <p class="text">商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们</p>
+            <address class="address">邮箱：xxxxxxx 电话：xxxxxx</address>
+          </div>
+        </li>
+      </ul>
+      <div class="company-info">有关 AITIME 的服务，请参阅服务条款、隐私和安全声明</div>
+    </section>
   </div>
 </template>
 
@@ -17,19 +53,177 @@ import myHead from "@/components/header/header";
 export default {
   components: {
     myHead
-  }      
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 .home-page {
   position: relative;
-  .time {
+  .time-section {
     position: relative;
-    height: 986px;
-    background: url("../../public/images/Multiply@2x.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    .img {
+      display: block;
+      max-width: 100%;
+      border: none;
+      outline: none;
+    }
+    .title3 {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      font-size: 72px;
+      color: #fff;
+      font-weight: 100;
+    }
+    .text {
+      width: 740px;
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      color: #fff;
+      font-size: 16px;
+      line-height: 25px;
+    }
+    .text-2 {
+      top: 55%;
+      left: 10%;
+    }
+  }
+
+  .mission-section {
+    position: relative;
+    .img {
+      display: block;
+      max-width: 100%;
+      border: none;
+      outline: none;
+    }
+    .title3 {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      font-size: 72px;
+      color: #fff;
+      font-weight: 100;
+    }
+    .text {
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      color: #fff;
+      font-size: 16px;
+      line-height: 25px;
+    }
+    .text-1 {
+      top: 45%;
+      font-size: 24px;
+      left: 10%;
+    }
+    .text-2 {
+      top: 52%;
+      left: 10%;
+    }
+    .text-3 {
+      top: 65%;
+      font-size: 24px;
+      left: 10%;
+    }
+    .text-4 {
+      top: 72%;
+      left: 10%;
+    }
+  }
+
+
+  .contact-section {
+    padding-bottom: 70px;
+    > .title-3 {
+      position: relative;
+      font-size: 48px;
+      color: #576671;
+      text-align: center;
+      padding-bottom: 36px;
+      padding-top: 80px;
+      &::before {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 1px;
+        background: #17daa3;
+      }
+    }
+  }
+  .footer-section {
+    background: #edeff1;
+    .list {
+      padding-top: 140px;
+      padding-bottom: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: middle;
+      .item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        .iconfont-item {
+          width: 96px;
+          height: 96px;
+          line-height: 96px;
+          text-align: center;
+          font-size: 40px;
+          border: 1px solid #17daa3;
+          color: #17daa3;
+          background: #fff;
+          border-radius: 50%;
+        }
+        .left-area {
+          padding-top: 70px;
+          .iconfont-item.left {
+            box-sizing: border-box;
+            padding-right: 6px;
+          }
+          .iconfont-item.right {
+            box-sizing: border-box;
+            padding-left: 10px;
+          }
+        }
+        .right-area {
+          padding-left: 60px;
+          .title-5 {
+            font-size: 40px;
+            color: #576671;
+            text-align: center;
+            padding-bottom: 60px;
+          }
+          .text {
+            font-size: 20px;
+            width: 500px;
+            color: #87949e;
+            line-height: 30px;
+            padding-bottom: 50px;
+          }
+          .address {
+            font-size: 20px;
+            color: #87949e;
+            line-height: 25px;
+            font-style: inherit;
+          }
+        }
+      }
+    }
+    .company-info {
+      height: 60px;
+      line-height: 60px;
+      background: #15c492;
+      color: #fff;
+      font-size: 7px;
+      text-align: center;
+    }
   }
 }
 </style>
