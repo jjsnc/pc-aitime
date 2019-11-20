@@ -275,6 +275,7 @@ export default {
             line-height: 30px;
             padding-bottom: 50px;
             font-weight: 100;
+            padding-right: 20px;
           }
           .address {
             font-size: 20px;
