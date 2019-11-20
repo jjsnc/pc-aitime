@@ -49,8 +49,10 @@
 </template>
 
 <script>
+import minxinLocalStorage from "../common/minxinLocalStorage.js";
 import myHead from "@/components/header/header";
 export default {
+  mixins: [minxinLocalStorage],
   components: {
     myHead
   }
@@ -134,7 +136,6 @@ export default {
       left: 10%;
     }
   }
-
 
   .contact-section {
     padding-bottom: 70px;

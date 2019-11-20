@@ -66,7 +66,12 @@
 
 <script>
 import myHead from "@/components/header/header";
+// import minxinLocalStorage from "../common/minxinLocalStorage.js";
 export default {
+  // mixins: [minxinLocalStorage],
+  created(){
+   console.log(this.language)
+  },
   components: {
     myHead
   }

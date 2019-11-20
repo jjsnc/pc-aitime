@@ -56,9 +56,7 @@
         <li class="item">
           <div class="iconfont iconfont-item iconfont-item-2"></div>
           <h3 class="title-3">精确率高</h3>
-          <p class="text">
-           每个产品的模型均针对 e-KYC 场景设计。模型采用大量 本地数据进行训练，持续迭代，确保精准度满足业务需求。
-          </p>
+          <p class="text">每个产品的模型均针对 e-KYC 场景设计。模型采用大量 本地数据进行训练，持续迭代，确保精准度满足业务需求。</p>
         </li>
         <li class="item">
           <div class="iconfont iconfont-item iconfont-item-3"></div>
@@ -105,7 +103,9 @@
 
 <script>
 import myHead from "@/components/header/header";
+import minxinLocalStorage from "../common/minxinLocalStorage.js";
 export default {
+  mixins: [minxinLocalStorage],
   components: {
     myHead
   }
@@ -378,7 +378,7 @@ export default {
   .contact-section {
     padding-top: 20px;
     padding-bottom: 70px;
-    
+
     > .title-3 {
       position: relative;
       font-size: 48px;

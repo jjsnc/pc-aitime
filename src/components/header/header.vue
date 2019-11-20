@@ -16,8 +16,8 @@
               <i class="icon"></i>
             </span>
             <ul class="select-list" v-show="selectFlag">
-              <li class="select-item" @click.stop="toggleCountry('简体中文')">简体中文</li>
-              <li class="select-item" @click.stop="toggleCountry('English')">English</li>
+              <li class="select-item" @click.stop="toggleCountry('zh')">简体中文</li>
+              <li class="select-item" @click.stop="toggleCountry('le')">English</li>
             </ul>
           </div>
         </ul>
@@ -27,11 +27,12 @@
 </template>
 
 <script>
+import minxinLocalStorage from "../../common/minxinLocalStorage.js";
 export default {
+  mixins: [minxinLocalStorage],
   data() {
     return {
       currentData: {},
-      chineseData: {},
       englishData: {
         title: "AITIME"
       },
@@ -41,7 +42,13 @@ export default {
   },
   methods: {
     toggleCountry(country) {
-      this.currentCountry = country;
+      let languageObj = {
+        zh: "简体中文",
+        le: "English"
+      };
+      localStorage.setItem("language", country);
+      this.language = localStorage.getItem("language");
+      this.currentCountry = languageObj[country];
       this.selectFlag = false;
     },
     showSelect() {
