@@ -35,7 +35,8 @@
     <!-- 业务流程 -->
     <section class="process-section">
       <h3 class="title-3">{{currentData[language].processTitle}}</h3>
-      <img class="img" src="../../public/images/process@2x.png" />
+      <img class="img" v-if="language=='zh'" src="../../public/images/process-zh@2x.png" />
+      <img class="img" v-else src="../../public/images/process@2x.png" />
     </section>
     <!--  产品优势 -->
     <section class="advantage-section">
