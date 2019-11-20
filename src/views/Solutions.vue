@@ -2,36 +2,51 @@
   <div class="home-page">
     <myHead></myHead>
     <section class="time-section">
-      <img class="img" src="../../public/images/AITIME@2x (2).png" />
-      <h3 class="title3">运用大数据和人工智能技术，助力信用生活</h3>
-      <a href="#two" class="more-btn btn">查看更多</a>
+      <img class="img" src="../../public/images/soluMultiply@2x.png" />
+      <h3 class="title3">E-KYC解决方案</h3>
+      <p
+        class="text-1 text"
+      >AITIME e-KYC解决方案通过证件识别、活体检测、人脸对比、风险人脸等多种人工智 能技术，有效核验用户身份的真实性。身份核验适用于多场景、多业务，降低人工审核 成本和人为出错概率，大幅提升业务效率。</p>
       <div class="more-icon"></div>
     </section>
-    <section class="product-section" id="two">
-      <h3 class="title-3">我们的产品</h3>
-      <h6 class="title-6">专业/高效/智能化</h6>
+    <section class="product-section">
+      <h3 class="title-3">支持产品</h3>
       <ul class="list clearfix">
         <li class="item">
-          <div class="iconfont iconfont-item iconshujuzhongxin"></div>
-          <h3 class="title-3">AITIME数据</h3>
-          <p class="text">打通线上、线下高质量数据,数万 维度刻画信用风险画像。</p>
+          <div class="iconfont iconfont-item iconfont-item-1"></div>
+          <h3 class="title-3">OCR</h3>
         </li>
         <li class="item">
-          <div class="iconfont iconfont-item icon1huojian"></div>
-          <h3 class="title-3">AITIME引擎</h3>
-          <p class="text">海量数据,实时处理,秒级决策,驱 动大数据智能化的信用风险决策。</p>
+          <div class="iconfont iconfont-item iconfont-item-2"></div>
+          <h3 class="title-3">身份验证</h3>
         </li>
         <li class="item">
-          <div class="iconfont iconfont-item iconwufengxian"></div>
-          <h3 class="title-3">AITIME风控</h3>
-          <p class="text">风控决策贯穿用户借贷的整个周期, 深入贷前、贷中、贷后，构建全...</p>
+          <div class="iconfont iconfont-item iconfont-item-3"></div>
+          <h3 class="title-3">活体检测</h3>
         </li>
         <li class="item">
-          <div class="iconfont iconfont-item iconxingzhuang"></div>
-          <h3 class="title-3">AITIME卫士</h3>
-          <p class="text">为客户提供反欺诈服务，通过三重 检测以验证申请人数据中的不匹...</p>
+          <div class="iconfont iconfont-item iconfont-item-4"></div>
+          <h3 class="title-3">人脸对比</h3>
+        </li>
+        <li class="item">
+          <div class="iconfont iconfont-item iconfont-item-5"></div>
+          <h3 class="title-3">风险人脸</h3>
         </li>
       </ul>
+    </section>
+    <!-- 业务流程 -->
+    <section class="process-section">
+      <h3 class="title-3">业务流程</h3>
+      <img class="img" src="../../public/images/process@2x.png" />
+    </section>
+    <!--  产品优势 -->
+    <section class="advantage-section">
+      <h3 class="title-3">产品优势</h3>
+      <img class="img" src="../../public/images/programme@2x.png" />
+      <p class="info">
+        EKYC解决方案可最大限度地减少欺诈行为，服务包括身份证件OCR、活体检测、人脸对比和风险人脸等，它对
+        于验证过程中的各种欺诈行为能进行有效识别和阻拦，并且极大程度的节省人力成本。
+      </p>
     </section>
     <section class="contact-section">
       <h3 class="title-3">联系我们</h3>
@@ -74,20 +89,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@keyframes bounce-down {
-  25% {
-    transform: translateY(-10px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .home-page {
   position: relative;
   .time-section {
@@ -100,28 +101,20 @@ export default {
     }
     .title3 {
       position: absolute;
-      top: 45%;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 20px;
+      left: 10%;
+      top: 35%;
+      width: 740px;
+      font-size: 40px;
       color: #fff;
     }
-    .more-btn {
+    .text {
+      width: 700px;
       position: absolute;
-      top: 60%;
-      left: 50%;
-      transform: translateX(-50%);
-      display: block;
-      width: 184px;
-      height: 48px;
-      line-height: 48px;
-      background: rgba(0, 182, 203, 0);
-      border: 1px solid rgba(255, 255, 255, 1);
-      font-size: 17px;
-      text-align: center;
+      left: 10%;
+      top: 50%;
       color: #fff;
-      border-radius: 30px;
-      text-decoration: none;
+      font-size: 16px;
+      line-height: 35px;
     }
     .more-icon {
       position: absolute;
@@ -138,7 +131,6 @@ export default {
   }
 
   .product-section {
-    padding-bottom: 220px;
     > .title-3 {
       position: relative;
       font-size: 48px;
@@ -147,6 +139,7 @@ export default {
       text-align: center;
       padding-top: 130px;
       padding-bottom: 36px;
+      font-weight: 100;
       &::before {
         content: " ";
         display: inline-block;
@@ -159,51 +152,138 @@ export default {
         background: #17daa3;
       }
     }
-    .title-6 {
-      padding-top: 30px;
-      font-size: 18px;
-      color: #87949e;
-      text-align: center;
-      padding-bottom: 150px;
-    }
     .list {
       display: flex;
+      padding-top: 125px;
       .item {
         flex: 1;
         box-sizing: border-box;
         .iconfont-item {
           display: block;
           transition: all 0.3s ease;
-          width: 124px;
-          height: 124px;
+          width: 80px;
+          height: 80px;
           margin: 0 auto;
-          line-height: 124px;
-          border-radius: 50%;
+          line-height: 62px;
           color: #87949e;
-          background: rgba(135, 145, 158, 0.15);
           text-align: center;
-          font-size: 36px;
-          &:hover {
-            color: #fff;
-            background: #17daa3;
-          }
+        }
+        .iconfont-item-1 {
+          background: url("../../public/images/OCR@2x.png");
+          background-size: 82px 63px;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        .iconfont-item-2 {
+          background: url("../../public/images/identity@2x.png");
+          background-size: 62px 62px;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        .iconfont-item-3 {
+          background: url("../../public/images/Living@2x.png");
+          background-size: 60px 65px;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        .iconfont-item-4 {
+          background: url("../../public/images/Face@2x.png");
+          background-size: 62px 63px;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        .iconfont-item-5 {
+          background: url("../../public/images/risk@2x.png");
+          background-size: 55px 64px;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
         .title-3 {
           font-size: 22px;
           color: #000000;
-          padding: 65px 0 36px;
+          padding: 35px 0 36px;
           text-align: center;
-        }
-        .text {
-          font-size: 16px;
-          color: #87949e;
-          width: 240px;
-          margin: 0 auto;
-          line-height: 22px;
         }
       }
     }
   }
+
+  .process-section {
+    padding-top: 350px;
+    position: relative;
+    > .title-3 {
+      position: absolute;
+      left: 50%;
+      top: 150px;
+      font-size: 48px;
+      transform: translateX(-50%);
+      color: #576671;
+      text-align: center;
+      text-align: center;
+      font-weight: 100;
+      &::before {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 1px;
+        background: #17daa3;
+      }
+    }
+    .img {
+      display: block;
+      max-width: 100%;
+      border: none;
+      outline: none;
+    }
+  }
+
+  .advantage-section {
+    padding-top: 350px;
+    position: relative;
+    > .title-3 {
+      position: absolute;
+      left: 50%;
+      top: 150px;
+      font-size: 48px;
+      transform: translateX(-50%);
+      color: #576671;
+      text-align: center;
+      text-align: center;
+      font-weight: 100;
+      &::before {
+        content: " ";
+        display: inline-block;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 1px;
+        background: #17daa3;
+      }
+    }
+    .img {
+      display: block;
+      max-width: 100%;
+      border: none;
+      outline: none;
+    }
+    .info {
+      position: absolute;
+      left: 50%;
+      top: 75%;
+      font-size: 18px;
+      transform: translateX(-50%);
+      color: #fff;
+      line-height: 35px;
+      font-weight: 100;
+    }
+  }
+
   .contact-section {
     padding-bottom: 70px;
     > .title-3 {
@@ -291,6 +371,21 @@ export default {
       font-size: 7px;
       text-align: center;
     }
+  }
+}
+
+@keyframes bounce-down {
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 </style>
