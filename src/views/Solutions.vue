@@ -49,12 +49,12 @@
       </p>
       <ul class="list clearfix">
         <li class="item">
-          <div class="iconfont iconfont-item iconshujuzhongxin"></div>
+          <div class="iconfont iconfont-item iconfont-item-1"></div>
           <h3 class="title-3">模型更新频率高</h3>
           <p class="text">拥有大规模研发团队，持续收集数据优化模型，不断提升 产品精度。</p>
         </li>
         <li class="item">
-          <div class="iconfont iconfont-item icon1huojian"></div>
+          <div class="iconfont iconfont-item iconfont-item-2"></div>
           <h3 class="title-3">精确率高</h3>
           <p class="text">
             每个产品的模型均针对 e-KYC 场景设计。模型采用大量
@@ -62,12 +62,12 @@
           </p>
         </li>
         <li class="item">
-          <div class="iconfont iconfont-item iconwufengxian"></div>
+          <div class="iconfont iconfont-item iconfont-item-3"></div>
           <h3 class="title-3">功能全面</h3>
           <p class="text">风控决策贯穿用户借贷的整个周期, 深入贷前、贷中、贷后，构建全...</p>
         </li>
         <li class="item">
-          <div class="iconfont iconfont-item iconxingzhuang"></div>
+          <div class="iconfont iconfont-item iconfont-item-4"></div>
           <h3 class="title-3">AITIME卫士</h3>
           <p class="text">提供包括OCR、活体检测、人脸比对、人脸搜索、风险人 脸等e-KYC所需功能。</p>
         </li>
@@ -331,10 +331,30 @@ export default {
           background: rgba(135, 145, 158, 0.15);
           text-align: center;
           font-size: 36px;
-          &:hover {
-            color: #fff;
-            background: #17daa3;
-          }
+        }
+        .iconfont-item-1 {
+          background: url("../../public/images/time@2x.png");
+          background-size: 89px 89px;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        .iconfont-item-2 {
+          background: url("../../public/images/accurate@2x.png");
+          background-size: 110px 107px;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        .iconfont-item-3 {
+          background: url("../../public/images/function@2x.png");
+          background-size: 83px 84px;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+        .iconfont-item-4 {
+          background: url("../../public/images/Integrate@2x.png");
+          background-size: 85px 79px;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
         .title-3 {
           font-size: 22px;
