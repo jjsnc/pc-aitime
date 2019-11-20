@@ -60,6 +60,7 @@ export default {
       this.language = localStorage.getItem("language");
       this.currentCountry = languageObj[country];
       this.selectFlag = false;
+      this.$emit('changeLanguage',this.language);
     },
     showSelect() {
       this.selectFlag = true;
