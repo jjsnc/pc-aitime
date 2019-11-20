@@ -12,6 +12,12 @@ export default {
       currentCountry: "中文"
     };
   },
+  created() {
+    let lang = localStorage.getItem("language");
+    if (!lang) {
+      localStorage.setItem("language", "zh");
+    }
+  },
   methods: {
     toggleCountry(country) {
       this.currentCountry = country;
@@ -21,8 +27,8 @@ export default {
 };
 </script>
 <style scoped>
- body {
-   background: #000;
- }
+body {
+  background: #000;
+}
 </style>
 
