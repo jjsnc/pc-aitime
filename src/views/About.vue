@@ -150,10 +150,10 @@ export default {
       left: 10%;
       color: #fff;
       font-size: 16px;
-      line-height: 25px;
+      line-height: 35px;
     }
     .text-2 {
-      top: 55%;
+      top: 60%;
       left: 10%;
     }
   }
