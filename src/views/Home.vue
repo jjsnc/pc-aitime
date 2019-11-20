@@ -2,7 +2,7 @@
   <div class="home-page">
     <myHead @changeLanguage="changeLanguage"></myHead>
     <section class="time-section">
-      <img class="img" src="../../public/images/AITIME@2x (2).png" />
+      <img class="img" src="../../public/images/home-bg-1@2x.png" />
       <h3 class="title3">{{currentData[language].timeTitle}}</h3>
       <a href="#two" class="more-btn btn">{{currentData[language].timeBtnText}}</a>
       <div class="more-icon"></div>
@@ -228,7 +228,7 @@ export default {
       margin-left: -20px;
       width: 40px;
       height: 32px;
-      background: url("../../public/images/形状 9@2x.png");
+      background: url("../../public/images/logo@2x.png");
       background-size: 40px 32px;
       cursor: pointer;
       animation: bounce-down 1s linear infinite;
