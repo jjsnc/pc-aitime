@@ -7,9 +7,9 @@
       <div class="middle-area"></div>
       <div class="right-area">
         <ul class="list">
-          <router-link tag="li" class="item" to="/home">首页</router-link>
-          <router-link tag="li" class="item" to="/solutions">解决方案</router-link>
-          <router-link tag="li" class="item" to="/about">关于我们</router-link>
+          <router-link tag="li" class="item" to="/home">{{currentData[language][0]}}</router-link>
+          <router-link tag="li" class="item" to="/solutions">{{currentData[language][1]}}</router-link>
+          <router-link tag="li" class="item" to="/about">{{currentData[language][2]}}</router-link>
           <div class="selct-area" @click="showSelect">
             <span class="text">
               {{currentCountry}}
@@ -32,13 +32,23 @@ export default {
   mixins: [minxinLocalStorage],
   data() {
     return {
-      currentData: {},
+      currentData: {
+        zh: ["首页", "解决方案", "关于我们"],
+        le: ["HOME", "SOLUTIONS", "COMPANY"]
+      },
       englishData: {
         title: "AITIME"
       },
       selectFlag: false,
       currentCountry: "简体中文"
     };
+  },
+  created() {
+    let languageObj = {
+      zh: "简体中文",
+      le: "English"
+    };
+    this.currentCountry = languageObj[this.language];
   },
   methods: {
     toggleCountry(country) {
@@ -91,8 +101,9 @@ export default {
         padding-right: 76px;
         .item {
           display: inline-block;
-          padding-right: 76px;
+          width: 170px;
           color: #fff;
+          text-align: left;
           font-size: 16px;
           cursor: pointer;
           vertical-align: top;
