@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <myHead></myHead>
+    <myHead @changeLanguage="changeLanguage"></myHead>
     <section class="time-section">
       <img class="img" src="../../public/images/Multiply@2x.png" />
       <h3 class="title3">我们的团队</h3>
@@ -53,6 +53,11 @@ import minxinLocalStorage from "../common/minxinLocalStorage.js";
 import myHead from "@/components/header/header";
 export default {
   mixins: [minxinLocalStorage],
+  methods: {
+    changeLanguage(lang) {
+      this.language = lang;
+    }
+  },
   components: {
     myHead
   }

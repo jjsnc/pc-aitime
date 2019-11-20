@@ -1,102 +1,72 @@
 <template>
   <div class="home-page">
-    <myHead></myHead>
+    <myHead @changeLanguage="changeLanguage"></myHead>
     <section class="time-section">
       <img class="img" src="../../public/images/soluMultiply@2x.png" />
-      <h3 class="title3">E-KYC解决方案</h3>
-      <p
-        class="text-1 text"
-      >AITIME e-KYC解决方案通过证件识别、活体检测、人脸对比、风险人脸等多种人工智 能技术，有效核验用户身份的真实性。身份核验适用于多场景、多业务，降低人工审核 成本和人为出错概率，大幅提升业务效率。</p>
+      <h3 class="title3">{{currentData[language].timeTitle}}</h3>
+      <p class="text-1 text">{{currentData[language].timeContent}}</p>
       <div class="more-icon"></div>
     </section>
     <section class="product-section">
-      <h3 class="title-3">支持产品</h3>
+      <h3 class="title-3">{{currentData[language].productTitle1}}</h3>
       <ul class="list clearfix">
         <li class="item">
           <div class="iconfont iconfont-item iconfont-item-1"></div>
-          <h3 class="title-3">OCR</h3>
+          <h3 class="title-3">{{currentData[language].productList[0].title}}</h3>
         </li>
         <li class="item">
           <div class="iconfont iconfont-item iconfont-item-2"></div>
-          <h3 class="title-3">身份验证</h3>
+          <h3 class="title-3">{{currentData[language].productList[1].title}}</h3>
         </li>
         <li class="item">
           <div class="iconfont iconfont-item iconfont-item-3"></div>
-          <h3 class="title-3">活体检测</h3>
+          <h3 class="title-3">{{currentData[language].productList[2].title}}</h3>
         </li>
         <li class="item">
           <div class="iconfont iconfont-item iconfont-item-4"></div>
-          <h3 class="title-3">人脸对比</h3>
+          <h3 class="title-3">{{currentData[language].productList[3].title}}</h3>
         </li>
         <li class="item">
           <div class="iconfont iconfont-item iconfont-item-5"></div>
-          <h3 class="title-3">风险人脸</h3>
+          <h3 class="title-3">{{currentData[language].productList[4].title}}</h3>
         </li>
       </ul>
     </section>
     <!-- 业务流程 -->
     <section class="process-section">
-      <h3 class="title-3">业务流程</h3>
+      <h3 class="title-3">{{currentData[language].processTitle}}</h3>
       <img class="img" src="../../public/images/process@2x.png" />
     </section>
     <!--  产品优势 -->
     <section class="advantage-section">
-      <h3 class="title-3">产品优势</h3>
+      <h3 class="title-3">{{currentData[language].advantageTitle}}</h3>
       <img class="img" src="../../public/images/programme@2x.png" />
-      <p class="info">
-        EKYC解决方案可最大限度地减少欺诈行为，服务包括身份证件OCR、活体检测、人脸对比和风险人脸等，它对
-        于验证过程中的各种欺诈行为能进行有效识别和阻拦，并且极大程度的节省人力成本。
-      </p>
+      <p class="info">{{currentData[language].advantageContnet}}</p>
       <ul class="list clearfix">
-        <li class="item">
-          <div class="iconfont iconfont-item iconfont-item-1"></div>
-          <h3 class="title-3">模型更新频率高</h3>
-          <p class="text">拥有大规模研发团队，持续收集数据优化模型，不断提升 产品精度。</p>
-        </li>
-        <li class="item">
-          <div class="iconfont iconfont-item iconfont-item-2"></div>
-          <h3 class="title-3">精确率高</h3>
-          <p class="text">每个产品的模型均针对 e-KYC 场景设计。模型采用大量 本地数据进行训练，持续迭代，确保精准度满足业务需求。</p>
-        </li>
-        <li class="item">
-          <div class="iconfont iconfont-item iconfont-item-3"></div>
-          <h3 class="title-3">功能全面</h3>
-          <p class="text">提供包括OCR、活体检测、人脸比对、人脸搜索、风险人 脸等e-KYC所需功能。</p>
-        </li>
-        <li class="item">
-          <div class="iconfont iconfont-item iconfont-item-4"></div>
-          <h3 class="title-3">AITIME卫士</h3>
-          <p class="text">提供简单易于集成的端侧</p>
+        <li class="item" :key="index" v-for="(item, index) in  currentData[language].advantageList">
+          <div class="iconfont iconfont-item" :class="item.icon"></div>
+          <h3 class="title-3">{{item.title}}</h3>
+          <p class="text">{{item.content}}</p>
         </li>
       </ul>
     </section>
     <section class="contact-section">
-      <h3 class="title-3">联系我们</h3>
+      <h3 class="title-3">{{currentData[language].contactTitle}}</h3>
     </section>
     <section class="footer-section">
       <ul class="list">
-        <li class="item">
+        <li class="item" :key="index" v-for="(child, index) in currentData[language].contactList">
           <div class="left-area">
-            <div class="iconfont iconfont-item left iconmianxinggouwuche"></div>
+            <div class="iconfont iconfont-item left" :class="child.icon"></div>
           </div>
           <div class="right-area">
-            <h3 class="title-5">市场合作</h3>
-            <p class="text">媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们。</p>
-            <address class="address">邮箱：xxxxxxx 电话：xxxxxx</address>
-          </div>
-        </li>
-        <li class="item">
-          <div class="left-area">
-            <div class="iconfont iconfont-item right iconbangongshenling"></div>
-          </div>
-          <div class="right-area">
-            <h3 class="title-5">商务合作</h3>
-            <p class="text">商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们</p>
-            <address class="address">邮箱：xxxxxxx 电话：xxxxxx</address>
+            <h3 class="title-5">{{child.title}}</h3>
+            <p class="text">{{child.content}}</p>
+            <address class="address">{{child.mail}}{{child.phone}}</address>
           </div>
         </li>
       </ul>
-      <div class="company-info">有关 AITIME 的服务，请参阅服务条款、隐私和安全声明</div>
+      <div class="company-info">{{currentData[language].foootInfo}}</div>
     </section>
   </div>
 </template>
@@ -106,6 +76,165 @@ import myHead from "@/components/header/header";
 import minxinLocalStorage from "../common/minxinLocalStorage.js";
 export default {
   mixins: [minxinLocalStorage],
+  data() {
+    return {
+      currentData: {
+        zh: {
+          timeTitle: "E-KYC解决方案",
+          timeContent:
+            "AITIME e-KYC解决方案通过证件识别、活体检测、人脸对比、风险人脸等多种人工智 能技术，有效核验用户身份的真实性。身份核验适用于多场景、多业务，降低人工审核 成本和人为出错概率，大幅提升业务效率。",
+          productTitle1: "支持产品",
+          productList: [
+            {
+              title: "OCR"
+            },
+            {
+              title: "身份验证"
+            },
+            {
+              title: "活体检测"
+            },
+            {
+              title: "人脸对比"
+            },
+            {
+              title: "风险人脸"
+            }
+          ],
+          processTitle: "业务流程",
+          processImg: "../../public/images/process@2x.png",
+          advantageTitle: "产品优势",
+          advantageContnet:
+            "EKYC解决方案可最大限度地减少欺诈行为，服务包括身份证件OCR、活体检测、人脸对比和风险人脸等，它对 于验证过程中的各种欺诈行为能进行有效识别和阻拦，并且极大程度的节省人力成本。",
+          advantageList: [
+            {
+              title: "模型更新频率高",
+              icon: "iconfont-item-1",
+              content:
+                "拥有大规模研发团队，持续收集数据优化模型，不断提升 产品精度。"
+            },
+            {
+              title: "精确率高",
+              icon: "iconfont-item-2",
+              content:
+                "每个产品的模型均针对 e-KYC 场景设计。模型采用大量 本地数据进行训练，持续迭代，确保精准度满足业务需求。"
+            },
+            {
+              title: "功能全面",
+              icon: "iconfont-item-3",
+              content:
+                "提供包括OCR、活体检测、人脸比对、人脸搜索、风险人 脸等e-KYC所需功能。"
+            },
+            {
+              title: "易于集成",
+              icon: "iconfont-item-4",
+              content:
+                "提供简单易于集成的端侧SDK以及API调用，轻松集成形 成定制化的e-KYC解决方案。"
+            }
+          ],
+          contactTitle: "联系我们",
+          contactList: [
+            {
+              title: "市场合作",
+              icon: "iconmianxinggouwuche left",
+              content: "媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们",
+              mail: "邮箱：xxxxxxx ",
+              phone: "电话：xxxxxx"
+            },
+            {
+              title: "商务合作",
+              icon: "iconbangongshenling right",
+              content:
+                "商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们",
+              mail: "邮箱：xxxxxxx ",
+              phone: "电话：xxxxxx"
+            }
+          ],
+          foootInfo: "有关 AITIME 的服务，请参阅服务条款、隐私和安全声明"
+        },
+        le: {
+          timeTitle: "E-EKYC SOLUTIONS",
+          timeContent:
+            "AITIME e-KYC (Electronic-Know Your Customer) solution effectively verifies the user identities through technologies including ID Recognition, Liveness Detection, Face C omparison, Risky Face Search, etc. Identity verification products are applicable to mu ltiple settings and businesses, lowering manual verification costs and errors, increasi ng the business efficiency.",
+          productTitle1: "RELEVANT PRODUCTS",
+          productList: [
+            {
+              title: "OCR"
+            },
+            {
+              title: "ID Check "
+            },
+            {
+              title: " Liveness Detection"
+            },
+            {
+              title: "Face Comparison"
+            },
+            {
+              title: "Risky Faces"
+            }
+          ],
+          processTitle: "SUGGESTED EKYC WORKFLOW",
+          processImg: "../../public/images/process@2x.png",
+          advantageTitle: "ADVANTAGES AND BENIFITS",
+          advantageContnet:
+            "AITIME's EKYC grants companies the ability to greatly minimize fraud. EKYC’s features include Face Detec tion,Face Comparison, OCR and Liveness Detection. EKYC is the gatekeeper that prevents fraudsters from disrupting business cycles and expedites validation process and reduces human labor.",
+          advantageList: [
+            {
+              title: "Frequent Model Updates",
+              icon: "iconfont-item-1",
+              content:
+                "In house Computer Vision R&D team with leading global talents, consistently improving model performance by a ccumulating data for model optimization."
+            },
+            {
+              title: "High Accuracy",
+              icon: "iconfont-item-2",
+              content:
+                "The core algorithms of each product along the e-KYC pr ocess are specially designed for e-KYC scenarios, with l arge amount of training data collected locally, constan..."
+            },
+            {
+              title: "Full Functions",
+              icon: "iconfont-item-3",
+              content:
+                "Product and services include OCR, Liveness Detection, Face Comparison, Face Search, Face Blacklist, etc. es sential functions for e-KYC."
+            },
+            {
+              title: "Easy of Integrate",
+              icon: "iconfont-item-4",
+              content:
+                "SDK and API are provided for an effortless integration. Simply integrate the products to form customised e-KY C solution."
+            }
+          ],
+          contactTitle: "CONTACT US",
+          contactList: [
+            {
+              title: "Market Cooperation left",
+              icon: "iconmianxinggouwuche",
+              content:
+                "Media interviews,brand cooperation, market coo perat cooperation, want to know about AITIME, welcome to contact us. ",
+              mail: "mailbox：xxxxxxx ",
+              phone: "Tel：xxxxxx"
+            },
+            {
+              title: "Business Cooperation",
+              icon: "iconbangongshenling right",
+              content:
+                "Business cooperation, we are eager to innovate and lo ok forward to cooperate.want to know about AITIME, welcome to contact us.",
+              mail: "mailbox：xxxxxxx ",
+              phone: "Tel：xxxxxx"
+            }
+          ],
+          foootInfo:
+            "© AITIME Please find the Terms of Service and Privacy and Security Statement regarding AITIME's service"
+        }
+      }
+    };
+  },
+  methods: {
+    changeLanguage(lang) {
+      this.language = lang;
+    }
+  },
   components: {
     myHead
   }
@@ -227,6 +356,7 @@ export default {
           color: #000000;
           padding: 35px 0 36px;
           text-align: center;
+          font-weight: 100;
         }
       }
     }
@@ -440,19 +570,22 @@ export default {
             color: #576671;
             text-align: center;
             padding-bottom: 60px;
+            font-weight: 100;
+            text-align: left;
           }
           .text {
             font-size: 20px;
-            width: 500px;
             color: #87949e;
             line-height: 30px;
             padding-bottom: 50px;
+            font-weight: 100;
           }
           .address {
             font-size: 20px;
             color: #87949e;
             line-height: 25px;
             font-style: inherit;
+            font-weight: 100;
           }
         }
       }

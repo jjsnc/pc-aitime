@@ -370,10 +370,10 @@ export default {
             text-align: center;
             padding-bottom: 60px;
             font-weight: 100;
+             text-align: left;
           }
           .text {
             font-size: 20px;
-            width: 500px;
             color: #87949e;
             line-height: 30px;
             padding-bottom: 50px;
