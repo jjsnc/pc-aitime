@@ -535,6 +535,8 @@ export default {
     .list {
       padding-top: 140px;
       padding-bottom: 220px;
+      padding-left: 20px;
+      padding-right: 20px;
       display: flex;
       justify-content: center;
       align-items: middle;

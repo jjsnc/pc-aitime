@@ -233,6 +233,8 @@ export default {
       display: flex;
       justify-content: center;
       align-items: middle;
+      padding-left: 20px;
+      padding-right: 20px;
       .item {
         flex: 1;
         display: flex;
