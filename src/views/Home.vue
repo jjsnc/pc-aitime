@@ -9,57 +9,32 @@
     </section>
     <section class="product-section" id="two">
       <h3 class="title-3">{{currentData[language].productTitle1}}</h3>
-      <h6 class="title-6">专业/高效/智能化</h6>
+      <h6 class="title-6">{{currentData[language].productTitle3}}</h6>
       <ul class="list clearfix">
-        <li class="item">
-          <div class="iconfont iconfont-item iconshujuzhongxin"></div>
-          <h3 class="title-3">AITIME数据</h3>
-          <p class="text">打通线上、线下高质量数据,数万 维度刻画信用风险画像。</p>
-        </li>
-        <li class="item">
-          <div class="iconfont iconfont-item icon1huojian"></div>
-          <h3 class="title-3">AITIME引擎</h3>
-          <p class="text">海量数据,实时处理,秒级决策,驱 动大数据智能化的信用风险决策。</p>
-        </li>
-        <li class="item">
-          <div class="iconfont iconfont-item iconwufengxian"></div>
-          <h3 class="title-3">AITIME风控</h3>
-          <p class="text">风控决策贯穿用户借贷的整个周期, 深入贷前、贷中、贷后，构建全...</p>
-        </li>
-        <li class="item">
-          <div class="iconfont iconfont-item iconxingzhuang"></div>
-          <h3 class="title-3">AITIME卫士</h3>
-          <p class="text">为客户提供反欺诈服务，通过三重 检测以验证申请人数据中的不匹...</p>
+        <li class="item" :key="index" v-for="(item, index) in currentData[language].productList">
+          <div class="iconfont iconfont-item" :class="item.icon"></div>
+          <h3 class="title-3">{{item.title}}</h3>
+          <p class="text">{{item.content}}</p>
         </li>
       </ul>
     </section>
     <section class="contact-section">
-      <h3 class="title-3">联系我们</h3>
+      <h3 class="title-3">{{currentData[language].contactTitle}}</h3>
     </section>
     <section class="footer-section">
       <ul class="list">
-        <li class="item">
+        <li class="item" :key="index" v-for="(child, index) in currentData[language].contactList">
           <div class="left-area">
-            <div class="iconfont iconfont-item left iconmianxinggouwuche"></div>
+            <div class="iconfont iconfont-item left" :class="child.icon"></div>
           </div>
           <div class="right-area">
-            <h3 class="title-5">市场合作</h3>
-            <p class="text">媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们。</p>
-            <address class="address">邮箱：xxxxxxx 电话：xxxxxx</address>
-          </div>
-        </li>
-        <li class="item">
-          <div class="left-area">
-            <div class="iconfont iconfont-item right iconbangongshenling"></div>
-          </div>
-          <div class="right-area">
-            <h3 class="title-5">商务合作</h3>
-            <p class="text">商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们</p>
-            <address class="address">邮箱：xxxxxxx 电话：xxxxxx</address>
+            <h3 class="title-5">{{child.title}}</h3>
+            <p class="text">{{child.content}}</p>
+            <address class="address">{{child.mail}}{{child.phone}}</address>
           </div>
         </li>
       </ul>
-      <div class="company-info">有关 AITIME 的服务，请参阅服务条款、隐私和安全声明</div>
+      <div class="company-info">{{currentData[language].foootInfo}}</div>
     </section>
   </div>
 </template>
@@ -76,24 +51,28 @@ export default {
           timeTitle: "运用大数据和人工智能技术，助力信用生活",
           timeBtnText: "查看更多",
           productTitle1: "我们的产品",
-          productTitle3: "我们专业/高效/智能化的产品",
+          productTitle3: "专业/高效/智能化的产品",
           productList: [
             {
               title: "AITIME数据",
+              icon: "iconshujuzhongxin",
               content: "打通线上、线下高质量数据,数万 维度刻画信用风险画像。"
             },
             {
               title: "AITIME引擎",
+              icon: "icon1huojian",
               content:
                 "海量数据,实时处理,秒级决策,驱 动大数据智能化的信用风险决策。"
             },
             {
               title: "AITIME风控",
+              icon: "iconwufengxian",
               content:
                 "风控决策贯穿用户借贷的整个周期, 深入贷前、贷中、贷后，构建全..."
             },
             {
               title: "AITIME卫士",
+              icon: "iconxingzhuang",
               content:
                 "为客户提供反欺诈服务，通过三重 检测以验证申请人数据中的不匹..."
             }
@@ -102,12 +81,14 @@ export default {
           contactList: [
             {
               title: "市场合作",
+              icon: "iconmianxinggouwuche left",
               content: "媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们",
               mail: "邮箱：xxxxxxx ",
               phone: "电话：xxxxxx"
             },
             {
               title: "商务合作",
+              icon: "iconbangongshenling right",
               content:
                 "商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们",
               mail: "邮箱：xxxxxxx ",
@@ -126,21 +107,25 @@ export default {
           productList: [
             {
               title: "AITIME DATA",
+              icon: "iconshujuzhongxin",
               content:
                 "Through online,offline high-value data,thousands of dimensions to poytray credit risk portraits."
             },
             {
               title: "AITIME ENGINE",
+              icon: "icon1huojian",
               content:
                 "Credit Decision Engine.Massive d ata,real-time processing,second-l evel decision-making;driving cr..."
             },
             {
               title: "AITIME RISK CONTROL",
+              icon: "iconwufengxian",
               content:
                 "The risk control decision runs thr ough the entire cycle of user lend ing.building a comprehensive a..."
             },
             {
               title: "AITIME GUARDIAN",
+              icon: "iconxingzhuang",
               content:
                 "Guardian provides anti-fraud det ection services to be used . The t rifecta of identity verification, e..."
             }
@@ -148,21 +133,24 @@ export default {
           contactTitle: "CONTACT US",
           contactList: [
             {
-              title: "Market Cooperation",
+              title: "Market Cooperation left",
+              icon: "iconmianxinggouwuche",
               content:
                 "Media interviews,brand cooperation, market coo perat cooperation, want to know about AITIME, welcome to contact us. ",
               mail: "mailbox：xxxxxxx ",
               phone: "Tel：xxxxxx"
             },
             {
-              title: "商务合作",
+              title: "Business Cooperation",
+              icon: "iconbangongshenling right",
               content:
-                "商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们",
+                "Business cooperation, we are eager to innovate and lo ok forward to cooperate.want to know about AITIME, welcome to contact us.",
               mail: "mailbox：xxxxxxx ",
               phone: "Tel：xxxxxx"
             }
           ],
-          foootInfo: "© AITIME Please find the Terms of Service and Privacy and Security Statement regarding AITIME's service"
+          foootInfo:
+            "© AITIME Please find the Terms of Service and Privacy and Security Statement regarding AITIME's service"
         }
       }
     };
@@ -211,6 +199,8 @@ export default {
       top: 45%;
       left: 50%;
       transform: translateX(-50%);
+      line-height: 35px;
+      font-weight: 100;
       font-size: 20px;
       color: #fff;
     }
@@ -255,6 +245,7 @@ export default {
       text-align: center;
       padding-top: 130px;
       padding-bottom: 36px;
+      font-weight: 100;
       &::before {
         content: " ";
         display: inline-block;
@@ -279,6 +270,7 @@ export default {
       .item {
         flex: 1;
         box-sizing: border-box;
+        padding: 0 40px;
         .iconfont-item {
           display: block;
           transition: all 0.3s ease;
@@ -301,11 +293,12 @@ export default {
           color: #000000;
           padding: 65px 0 36px;
           text-align: center;
+          font-weight: 100;
         }
         .text {
           font-size: 16px;
           color: #87949e;
-          width: 240px;
+          padding: 0 15px;
           margin: 0 auto;
           line-height: 22px;
         }
@@ -320,6 +313,7 @@ export default {
       color: #576671;
       text-align: center;
       padding-bottom: 36px;
+      font-weight: 100;
       &::before {
         content: " ";
         display: inline-block;
@@ -335,6 +329,7 @@ export default {
   }
   .footer-section {
     background: #edeff1;
+    padding: 0 30px;
     .list {
       padding-top: 140px;
       padding-bottom: 220px;
@@ -374,6 +369,7 @@ export default {
             color: #576671;
             text-align: center;
             padding-bottom: 60px;
+            font-weight: 100;
           }
           .text {
             font-size: 20px;
@@ -381,12 +377,14 @@ export default {
             color: #87949e;
             line-height: 30px;
             padding-bottom: 50px;
+            font-weight: 100;
           }
           .address {
             font-size: 20px;
             color: #87949e;
             line-height: 25px;
             font-style: inherit;
+            font-weight: 100;
           }
         }
       }
