@@ -57,19 +57,18 @@
           <div class="iconfont iconfont-item iconfont-item-2"></div>
           <h3 class="title-3">精确率高</h3>
           <p class="text">
-            每个产品的模型均针对 e-KYC 场景设计。模型采用大量
-            本地数据进行训练，持续迭代，确保精准度满足业务需求。
+           每个产品的模型均针对 e-KYC 场景设计。模型采用大量 本地数据进行训练，持续迭代，确保精准度满足业务需求。
           </p>
         </li>
         <li class="item">
           <div class="iconfont iconfont-item iconfont-item-3"></div>
           <h3 class="title-3">功能全面</h3>
-          <p class="text">风控决策贯穿用户借贷的整个周期, 深入贷前、贷中、贷后，构建全...</p>
+          <p class="text">提供包括OCR、活体检测、人脸比对、人脸搜索、风险人 脸等e-KYC所需功能。</p>
         </li>
         <li class="item">
           <div class="iconfont iconfont-item iconfont-item-4"></div>
           <h3 class="title-3">AITIME卫士</h3>
-          <p class="text">提供包括OCR、活体检测、人脸比对、人脸搜索、风险人 脸等e-KYC所需功能。</p>
+          <p class="text">提供简单易于集成的端侧</p>
         </li>
       </ul>
     </section>
@@ -261,6 +260,7 @@ export default {
     .img {
       display: block;
       max-width: 100%;
+      margin: 0 auto;
       border: none;
       outline: none;
     }
@@ -300,7 +300,7 @@ export default {
     .info {
       position: absolute;
       left: 50%;
-      top: 50%;
+      top: 35%;
       font-size: 18px;
       transform: translateX(-50%);
       color: #fff;
@@ -319,10 +319,11 @@ export default {
       .item {
         width: 50%;
         box-sizing: border-box;
+        margin-bottom: 100px;
         .iconfont-item {
           display: block;
           transition: all 0.3s ease;
-          width: 124px;
+          width: 100%;
           height: 124px;
           margin: 0 auto;
           line-height: 124px;
@@ -335,52 +336,56 @@ export default {
         .iconfont-item-1 {
           background: url("../../public/images/time@2x.png");
           background-size: 89px 89px;
-          background-position: center center;
+          background-position: 30% center;
           background-repeat: no-repeat;
         }
         .iconfont-item-2 {
           background: url("../../public/images/accurate@2x.png");
           background-size: 110px 107px;
-          background-position: center center;
+          background-position: 30% center;
           background-repeat: no-repeat;
         }
         .iconfont-item-3 {
           background: url("../../public/images/function@2x.png");
           background-size: 83px 84px;
-          background-position: center center;
+          background-position: 30% center;
           background-repeat: no-repeat;
         }
         .iconfont-item-4 {
           background: url("../../public/images/Integrate@2x.png");
           background-size: 85px 79px;
-          background-position: center center;
+          background-position: 30% center;
           background-repeat: no-repeat;
         }
         .title-3 {
           font-size: 22px;
           color: #000000;
-          padding: 65px 0 36px;
-          text-align: center;
+          padding: 30px 0 30px;
+          padding-left: 26%;
+          font-weight: 100;
         }
         .text {
           font-size: 16px;
           color: #87949e;
           width: 240px;
-          margin: 0 auto;
-          line-height: 22px;
+          padding-left: 26%;
+          line-height: 26px;
         }
       }
     }
   }
 
   .contact-section {
+    padding-top: 20px;
     padding-bottom: 70px;
+    
     > .title-3 {
       position: relative;
       font-size: 48px;
       color: #576671;
       text-align: center;
       padding-bottom: 36px;
+      font-weight: 100;
       &::before {
         content: " ";
         display: inline-block;
