@@ -535,8 +535,8 @@ export default {
     .list {
       padding-top: 140px;
       padding-bottom: 220px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 60px;
+      padding-right: 60px;
       display: flex;
       justify-content: center;
       align-items: middle;
@@ -544,6 +544,7 @@ export default {
         flex: 1;
         display: flex;
         justify-content: center;
+        max-width: 600px;
         .iconfont-item {
           width: 96px;
           height: 96px;
@@ -567,14 +568,14 @@ export default {
           }
         }
         .right-area {
-          padding-left: 60px;
+          padding-left: 45px;
           .title-5 {
             font-size: 40px;
             color: #576671;
             text-align: center;
             padding-bottom: 60px;
             font-weight: 100;
-            text-align: left;
+             text-align: left;
           }
           .text {
             font-size: 20px;
@@ -592,6 +593,9 @@ export default {
             font-weight: 100;
           }
         }
+      }
+      .item:last-child {
+        margin-left: 60px;
       }
     }
     .company-info {
