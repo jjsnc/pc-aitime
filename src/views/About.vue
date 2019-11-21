@@ -27,7 +27,8 @@
           <div class="right-area">
             <h3 class="title-5">{{child.title}}</h3>
             <p class="text">{{child.content}}</p>
-            <address class="address">{{child.mail}}{{child.phone}}</address>
+            <address class="address">{{child.mail}}</address>
+            <address class="address">{{child.phone}}</address>
           </div>
         </li>
       </ul>
@@ -286,6 +287,7 @@ export default {
             line-height: 25px;
             font-style: inherit;
             font-weight: 100;
+            margin-bottom: 15px;
           }
         }
       }

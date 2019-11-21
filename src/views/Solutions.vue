@@ -63,7 +63,8 @@
           <div class="right-area">
             <h3 class="title-5">{{child.title}}</h3>
             <p class="text">{{child.content}}</p>
-            <address class="address">{{child.mail}}{{child.phone}}</address>
+            <address class="address">{{child.mail}}</address>
+            <address class="address">{{child.phone}}</address>
           </div>
         </li>
       </ul>
@@ -139,7 +140,7 @@ export default {
               title: "市场合作",
               icon: "iconmianxinggouwuche left",
               content: "媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们",
-              mail: "邮箱：xxxxxxx ",
+              mail: "邮箱：chenfang@rongshikeji.cn",
               phone: "电话：17155944982"
             },
             {
@@ -147,7 +148,7 @@ export default {
               icon: "iconbangongshenling right",
               content:
                 "商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们",
-              mail: "邮箱：xxxxxxx ",
+              mail: "邮箱：chenfang@rongshikeji.cn",
               phone: "电话：17155944982"
             }
           ],
@@ -591,6 +592,7 @@ export default {
             line-height: 25px;
             font-style: inherit;
             font-weight: 100;
+            margin-bottom: 15px;
           }
         }
       }
