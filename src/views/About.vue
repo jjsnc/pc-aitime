@@ -62,16 +62,16 @@ export default {
               title: "市场合作",
               icon: "iconmianxinggouwuche left",
               content: "媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们",
-              mail: "邮箱：xxxxxxx ",
-              phone: "电话：xxxxxx"
+              mail: "邮箱：chenfang@rongshikeji.cn ",
+              phone: "电话：17155944982"
             },
             {
               title: "商务合作",
               icon: "iconbangongshenling right",
               content:
                 "商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们",
-              mail: "邮箱：xxxxxxx ",
-              phone: "电话：xxxxxx"
+              mail: "邮箱：chenfang@rongshikeji.cn ",
+              phone: "电话：17155944982"
             }
           ],
           foootInfo: "有关 AITIME 的服务，请参阅服务条款、隐私和安全声明"
@@ -95,16 +95,16 @@ export default {
               icon: "iconmianxinggouwuche",
               content:
                 "Media interviews,brand cooperation, market coo perat cooperation, want to know about AITIME, welcome to contact us. ",
-              mail: "mailbox：xxxxxxx ",
-              phone: "Tel：xxxxxx"
+              mail: "mailbox：chenfang@rongshikeji.cn ",
+              phone: "Tel：17155944982"
             },
             {
               title: "Business Cooperation",
               icon: "iconbangongshenling right",
               content:
                 "Business cooperation, we are eager to innovate and lo ok forward to cooperate.want to know about AITIME, welcome to contact us.",
-              mail: "mailbox：xxxxxxx ",
-              phone: "Tel：xxxxxx"
+              mail: "mailbox：chenfang@rongshikeji.cn",
+              phone: "Tel：17155944982"
             }
           ],
           foootInfo:
@@ -230,15 +230,16 @@ export default {
     .list {
       padding-top: 140px;
       padding-bottom: 220px;
+      padding-left: 60px;
+      padding-right: 60px;
       display: flex;
       justify-content: center;
       align-items: middle;
-      padding-left: 20px;
-      padding-right: 20px;
       .item {
         flex: 1;
         display: flex;
         justify-content: center;
+        max-width: 600px;
         .iconfont-item {
           width: 96px;
           height: 96px;
@@ -262,14 +263,14 @@ export default {
           }
         }
         .right-area {
-          padding-left: 60px;
+          padding-left: 45px;
           .title-5 {
             font-size: 40px;
             color: #576671;
             text-align: center;
             padding-bottom: 60px;
             font-weight: 100;
-            text-align: left;
+             text-align: left;
           }
           .text {
             font-size: 20px;
@@ -287,6 +288,9 @@ export default {
             font-weight: 100;
           }
         }
+      }
+      .item:last-child {
+        margin-left: 60px;
       }
     }
     .company-info {
