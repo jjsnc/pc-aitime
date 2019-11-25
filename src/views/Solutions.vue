@@ -140,16 +140,16 @@ export default {
               title: "市场合作",
               icon: "iconmianxinggouwuche left",
               content: "媒体采访、品牌合作、市场合作,想了解AITIME,欢迎联系我们",
-              mail: "邮箱：chenfang@rongshikeji.cn",
-              phone: "电话：17155944982"
+              mail: "邮箱：chenfang@aitime.credit",
+              phone: "电话：+86 17155944982"
             },
             {
               title: "商务合作",
               icon: "iconbangongshenling right",
               content:
                 "商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们",
-              mail: "邮箱：chenfang@rongshikeji.cn",
-              phone: "电话：17155944982"
+              mail: "邮箱：chenfang@aitime.credit",
+              phone: "电话：+86 17155944982"
             }
           ],
           foootInfo: "有关 AITIME 的服务，请参阅服务条款、隐私和安全声明"
@@ -214,16 +214,16 @@ export default {
               icon: "iconmianxinggouwuche",
               content:
                 "Media interviews,brand cooperation, market coo perat cooperation, want to know about AITIME, welcome to contact us. ",
-              mail: "mailbox：chenfang@rongshikeji.cn",
-              phone: "Tel：17155944982"
+              mail: "mailbox：chenfang@aitime.credit",
+              phone: "Tel：+86 17155944982"
             },
             {
               title: "Business Cooperation",
               icon: "iconbangongshenling right",
               content:
                 "Business cooperation, we are eager to innovate and lo ok forward to cooperate.want to know about AITIME, welcome to contact us.",
-              mail: "mailbox：chenfang@rongshikeji.cn",
-              phone: "Tel：17155944982"
+              mail: "mailbox：chenfang@aitime.credit",
+              phone: "Tel：+86 17155944982"
             }
           ],
           foootInfo:
