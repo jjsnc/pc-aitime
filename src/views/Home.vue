@@ -5,7 +5,9 @@
       <img class="img" src="../../public/images/home-bg-1@2x.png" />
       <h3 class="title3">{{currentData[language].timeTitle}}</h3>
       <a href="#two" class="more-btn btn">{{currentData[language].timeBtnText}}</a>
-      <div class="more-icon"></div>
+      <div class="more-icon">
+          <a href="#two"></a>
+      </div>
     </section>
     <section class="product-section" id="two">
       <h3 class="title-3">{{currentData[language].productTitle1}}</h3>
@@ -233,6 +235,11 @@ export default {
       background-size: 40px 32px;
       cursor: pointer;
       animation: bounce-down 1s linear infinite;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
