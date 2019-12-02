@@ -15,7 +15,7 @@ export default {
   created() {
     let lang = localStorage.getItem("language");
     if (!lang) {
-      localStorage.setItem("language", "zh");
+      localStorage.setItem("language", "le");
     }
   },
   methods: {
