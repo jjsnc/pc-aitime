@@ -147,7 +147,7 @@ export default {
               title: "商务合作",
               icon: "iconbangongshenling right",
               content:
-                "商务合作,我们渴望创新,期盼合作,想了解AITIME，欢迎联系我们",
+                "商务合作，我们渴望创新，期盼合作。",
               mail: "邮箱：chenfang@aitime.credit",
               phone: "电话：+86 17155944982"
             }
@@ -584,6 +584,7 @@ export default {
             line-height: 30px;
             padding-bottom: 50px;
             font-weight: 100;
+            height: 60px;
             padding-right: 20px;
           }
           .address {
