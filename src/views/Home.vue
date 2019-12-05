@@ -71,13 +71,13 @@ export default {
               title: "AITIME风控",
               icon: "iconwufengxian",
               content:
-                "风控决策贯穿用户借贷的整个周期, 深入贷前、贷中、贷后，构建全..."
+                "风控决策贯穿用户借贷的整个周期，深入贷前、贷中、贷后，构建全面有效的风控系统。"
             },
             {
               title: "AITIME卫士",
               icon: "iconxingzhuang",
               content:
-                "为客户提供反欺诈服务，通过三重 检测以验证申请人数据中的不匹..."
+                "为客户提供反欺诈服务，通过三重检测以验证申请人数据中的不匹配情况，从而降低欺诈性申请率"
             }
           ],
           contactTitle: "联系我们",
@@ -118,28 +118,28 @@ export default {
               title: "AITIME ENGINE",
               icon: "icon1huojian",
               content:
-                "Credit Decision Engine.Massive d ata,real-time processing,second-l evel decision-making;driving cr..."
+                "Credit Decision Engine.Massive data,real-time processing,second-level decision-making;driving credit risk decision-making for big data intelligence."
             },
             {
               title: "AITIME RISK CONTROL",
               icon: "iconwufengxian",
               content:
-                "The risk control decision runs thr ough the entire cycle of user lend ing.building a comprehensive a..."
+                "The risk control decision runs through the entire cycle of user lending.building a comprehensive and effective risk control system on the whole loan process."
             },
             {
               title: "AITIME GUARDIAN",
               icon: "iconxingzhuang",
               content:
-                "Guardian provides anti-fraud det ection services to be used . The t rifecta of identity verification, e..."
+                "Guardian provides anti-fraud detection services to be used . The trifecta of identity verification, employment data validation, and credit history are used to detect mismatches in the applicant's data, thus lowering the fraudulent application rate."
             }
           ],
           contactTitle: "CONTACT US",
           contactList: [
             {
-              title: "Market Cooperation left",
+              title: "Market Cooperation",
               icon: "iconmianxinggouwuche",
               content:
-                "Media interviews,brand cooperation, market coo perat cooperation, want to know about AITIME, welcome to contact us. ",
+                "Media interviews,brand cooperation, market cooperation, want to know about AITIME, welcome to contact us. ",
               mail: "mailbox：chenfang@aitime.credit ",
               phone: "Tel：+86 17155944982"
             },
@@ -147,7 +147,7 @@ export default {
               title: "Business Cooperation",
               icon: "iconbangongshenling right",
               content:
-                "Business cooperation, we are eager to innovate and lo ok forward to cooperate.want to know about AITIME, welcome to contact us.",
+                "Business cooperation, we are eager to innovate and look forward to cooperate.",
               mail: "mailbox：chenfang@aitime.credit ",
               phone: "Tel：+86 17155944982"
             }

@@ -192,37 +192,37 @@ export default {
               title: "High Accuracy",
               icon: "iconfont-item-2",
               content:
-                "The core algorithms of each product along the e-KYC pr ocess are specially designed for e-KYC scenarios, with l arge amount of training data collected locally, constan..."
+                "The core algorithms of each product along the e-KYC process are specially designed for e-KYC scenarios, with large amount of training data collected locally, constantly iterating, ensuring the accuracy sufficiently meets customer needs."
             },
             {
               title: "Full Functions",
               icon: "iconfont-item-3",
               content:
-                "Product and services include OCR, Liveness Detection, Face Comparison, Face Search, Face Blacklist, etc. es sential functions for e-KYC."
+                "Product and services include OCR, Liveness Detection, Face Comparison, Face Search, Face Blacklist, etc. essential functions for e-KYC."
             },
             {
               title: "Easy of Integrate",
               icon: "iconfont-item-4",
               content:
-                "SDK and API are provided for an effortless integration. Simply integrate the products to form customised e-KY C solution."
+                "SDK and API are provided for an effortless integration. Simply integrate the products to form customised e-KYC solution."
             }
           ],
           contactTitle: "CONTACT US",
           contactList: [
             {
-              title: "Market Cooperation left",
+              title: "Market Cooperation",
               icon: "iconmianxinggouwuche",
               content:
-                "Media interviews,brand cooperation, market coo perat cooperation, want to know about AITIME, welcome to contact us. ",
-              mail: "mailbox：chenfang@aitime.credit",
+                "Media interviews,brand cooperation, market cooperation, want to know about AITIME, welcome to contact us. ",
+              mail: "mailbox：chenfang@aitime.credit ",
               phone: "Tel：+86 17155944982"
             },
             {
               title: "Business Cooperation",
               icon: "iconbangongshenling right",
               content:
-                "Business cooperation, we are eager to innovate and lo ok forward to cooperate.want to know about AITIME, welcome to contact us.",
-              mail: "mailbox：chenfang@aitime.credit",
+                "Business cooperation, we are eager to innovate and look forward to cooperate.",
+              mail: "mailbox：chenfang@aitime.credit ",
               phone: "Tel：+86 17155944982"
             }
           ],
@@ -499,9 +499,9 @@ export default {
         .text {
           font-size: 16px;
           color: #87949e;
-          width: 240px;
+          width: 50%;
           padding-left: 26%;
-          line-height: 26px;
+          line-height: 28px;
         }
       }
     }
