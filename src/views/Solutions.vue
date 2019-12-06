@@ -58,7 +58,7 @@
       <ul class="list">
         <li class="item" :key="index" v-for="(child, index) in currentData[language].contactList">
           <div class="left-area">
-            <div class="iconfont iconfont-item left" :class="child.icon"></div>
+            <div class="my-icon" :class="'icon-'+index"></div>
           </div>
           <div class="right-area">
             <h3 class="title-5">{{child.title}}</h3>
@@ -261,12 +261,13 @@ export default {
       width: 740px;
       font-size: 40px;
       color: #fff;
+      font-weight: bold;
     }
     .text {
       width: 700px;
       position: absolute;
       left: 10%;
-      top: 50%;
+      top: 53%;
       color: #fff;
       font-size: 16px;
       line-height: 35px;
@@ -294,7 +295,7 @@ export default {
       text-align: center;
       padding-top: 130px;
       padding-bottom: 36px;
-      font-weight: 100;
+      font-weight: bold;
       &::before {
         content: " ";
         display: inline-block;
@@ -310,6 +311,8 @@ export default {
     .list {
       display: flex;
       padding-top: 125px;
+      width: 90%;
+      margin: 0 auto;
       .item {
         flex: 1;
         box-sizing: border-box;
@@ -358,7 +361,7 @@ export default {
           color: #000000;
           padding: 35px 0 36px;
           text-align: center;
-          font-weight: 100;
+          font-weight: bold;
         }
       }
     }
@@ -367,6 +370,7 @@ export default {
   .process-section {
     padding-top: 350px;
     position: relative;
+    
     > .title-3 {
       position: absolute;
       left: 50%;
@@ -376,7 +380,7 @@ export default {
       color: #576671;
       text-align: center;
       text-align: center;
-      font-weight: 100;
+      font-weight: bold;
       &::before {
         content: " ";
         display: inline-block;
@@ -410,7 +414,7 @@ export default {
       color: #576671;
       text-align: center;
       text-align: center;
-      font-weight: 100;
+      font-weight: bold;
       &::before {
         content: " ";
         display: inline-block;
@@ -438,15 +442,18 @@ export default {
       color: #fff;
       line-height: 35px;
       font-weight: 100;
+      text-align: center;
     }
     .list {
-      width: 100%;
+      width: 90%;
+      margin: 0 auto;
       height: auto;
       display: flex;
       display: -webkit-flex;
       justify-content: space-between;
       flex-direction: row;
       flex-wrap: wrap;
+
       padding-top: 128px;
       .item {
         width: 50%;
@@ -467,34 +474,34 @@ export default {
         }
         .iconfont-item-1 {
           background: url("../../public/images/time@2x.png");
-          background-size: 89px 89px;
+          background-size: 60px 60px;
           background-position: 30% center;
           background-repeat: no-repeat;
         }
         .iconfont-item-2 {
           background: url("../../public/images/accurate@2x.png");
-          background-size: 110px 107px;
+          background-size: 70px 70px;
           background-position: 30% center;
           background-repeat: no-repeat;
         }
         .iconfont-item-3 {
           background: url("../../public/images/function@2x.png");
-          background-size: 83px 84px;
+          background-size: 60px 60px;
           background-position: 30% center;
           background-repeat: no-repeat;
         }
         .iconfont-item-4 {
           background: url("../../public/images/Integrate@2x.png");
-          background-size: 85px 79px;
+          background-size: 60px 60px;
           background-position: 30% center;
           background-repeat: no-repeat;
         }
         .title-3 {
           font-size: 22px;
           color: #000000;
-          padding: 30px 0 30px;
+          padding: 20px 0 20px;
           padding-left: 26%;
-          font-weight: 100;
+          font-weight: bold;
         }
         .text {
           font-size: 16px;
@@ -502,6 +509,17 @@ export default {
           width: 50%;
           padding-left: 26%;
           line-height: 28px;
+          // display: -webkit-box;
+          // -webkit-box-orient: vertical;
+          // -webkit-line-clamp: 3;
+          // overflow: hidden;
+          // cursor: pointer;
+          // &:hover {
+          //   display: initial;
+          //   -webkit-box-orient: initial;
+          //   -webkit-line-clamp: initial;
+          //   overflow: initial;
+          // }
         }
       }
     }
@@ -559,13 +577,15 @@ export default {
         }
         .left-area {
           padding-top: 70px;
-          .iconfont-item.left {
-            box-sizing: border-box;
-            padding-right: 6px;
+          .my-icon {
+            width: 94px;
+            height: 94px;
+            background: url("../../public/images/footer-1.png");
+            background-size: 94px 94px;
           }
-          .iconfont-item.right {
-            box-sizing: border-box;
-            padding-left: 10px;
+          .icon-1 {
+            background: url("../../public/images/footer-2.png");
+            background-size: 94px 94px;
           }
         }
         .right-area {
@@ -576,7 +596,7 @@ export default {
             text-align: center;
             padding-bottom: 60px;
             font-weight: 100;
-             text-align: left;
+            text-align: left;
           }
           .text {
             font-size: 20px;

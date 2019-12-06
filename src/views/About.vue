@@ -22,7 +22,7 @@
       <ul class="list">
         <li class="item" :key="index" v-for="(child, index) in currentData[language].contactList">
           <div class="left-area">
-            <div class="iconfont iconfont-item left" :class="child.icon"></div>
+            <div class="my-icon" :class="'icon-'+index"></div>
           </div>
           <div class="right-area">
             <h3 class="title-5">{{child.title}}</h3>
@@ -141,7 +141,7 @@ export default {
       left: 10%;
       font-size: 72px;
       color: #fff;
-      font-weight: 100;
+      font-weight: bold;
     }
     .text {
       width: 740px;
@@ -172,7 +172,7 @@ export default {
       left: 10%;
       font-size: 72px;
       color: #fff;
-      font-weight: 100;
+      font-weight: bold;
     }
     .text {
       position: absolute;
@@ -186,6 +186,7 @@ export default {
       top: 45%;
       font-size: 24px;
       left: 10%;
+      font-weight: bold;
     }
     .text-2 {
       top: 52%;
@@ -195,6 +196,7 @@ export default {
       top: 65%;
       font-size: 24px;
       left: 10%;
+      font-weight: bold;
     }
     .text-4 {
       top: 72%;
@@ -211,7 +213,7 @@ export default {
       text-align: center;
       padding-bottom: 36px;
       padding-top: 80px;
-      font-weight: 100;
+      font-weight: bold;
       &::before {
         content: " ";
         display: inline-block;
@@ -253,13 +255,15 @@ export default {
         }
         .left-area {
           padding-top: 70px;
-          .iconfont-item.left {
-            box-sizing: border-box;
-            padding-right: 6px;
+          .my-icon {
+            width: 94px;
+            height: 94px;
+            background: url("../../public/images/footer-1.png");
+            background-size: 94px 94px;
           }
-          .iconfont-item.right {
-            box-sizing: border-box;
-            padding-left: 10px;
+          .icon-1 {
+            background: url("../../public/images/footer-2.png");
+            background-size: 94px 94px;
           }
         }
         .right-area {
@@ -278,8 +282,8 @@ export default {
             line-height: 30px;
             padding-bottom: 50px;
             font-weight: 100;
-            padding-right: 20px;
             height: 60px;
+            padding-right: 20px;
           }
           .address {
             font-size: 20px;

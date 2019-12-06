@@ -27,7 +27,7 @@
       <ul class="list">
         <li class="item" :key="index" v-for="(child, index) in currentData[language].contactList">
           <div class="left-area">
-            <div class="iconfont iconfont-item left" :class="child.icon"></div>
+            <div class="my-icon" :class="'icon-'+index"></div>
           </div>
           <div class="right-area">
             <h3 class="title-5">{{child.title}}</h3>
@@ -201,10 +201,11 @@ export default {
       top: 45%;
       left: 50%;
       transform: translateX(-50%);
-      line-height: 35px;
+      line-height: 40px;
       font-weight: 100;
       font-size: 20px;
       color: #fff;
+      text-align: center;
     }
     .more-btn {
       position: absolute;
@@ -252,7 +253,7 @@ export default {
       text-align: center;
       padding-top: 130px;
       padding-bottom: 36px;
-      font-weight: 100;
+      font-weight: bold;
       &::before {
         content: " ";
         display: inline-block;
@@ -274,6 +275,8 @@ export default {
     }
     .list {
       display: flex;
+      width: 90%;
+      margin: 0 auto;
       .item {
         flex: 1;
         box-sizing: border-box;
@@ -289,7 +292,7 @@ export default {
           color: #87949e;
           background: rgba(135, 145, 158, 0.15);
           text-align: center;
-          font-size: 36px;
+          font-size: 50px;
           &:hover {
             color: #fff;
             background: #17daa3;
@@ -300,14 +303,25 @@ export default {
           color: #000000;
           padding: 65px 0 36px;
           text-align: center;
-          font-weight: 100;
+          font-weight: bold;
         }
         .text {
           font-size: 16px;
           color: #87949e;
-          padding: 0 15px;
+          // padding: 0 15px;
           margin: 0 auto;
           line-height: 22px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+          cursor: pointer;
+          &:hover {
+            display: initial;
+            -webkit-box-orient: initial;
+            -webkit-line-clamp: initial;
+            overflow: initial;
+          }
         }
       }
     }
@@ -320,7 +334,7 @@ export default {
       color: #576671;
       text-align: center;
       padding-bottom: 36px;
-      font-weight: 100;
+      font-weight: bold;
       &::before {
         content: " ";
         display: inline-block;
@@ -362,13 +376,15 @@ export default {
         }
         .left-area {
           padding-top: 70px;
-          .iconfont-item.left {
-            box-sizing: border-box;
-            padding-right: 6px;
+          .my-icon {
+            width: 94px;
+            height: 94px;
+            background: url("../../public/images/footer-1.png");
+            background-size: 94px 94px;
           }
-          .iconfont-item.right {
-            box-sizing: border-box;
-            padding-left: 10px;
+          .icon-1 {
+            background: url("../../public/images/footer-2.png");
+            background-size: 94px 94px;
           }
         }
         .right-area {
