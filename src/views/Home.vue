@@ -139,7 +139,7 @@ export default {
               icon: "iconmianxinggouwuche",
               content:
                 "Media interviews,brand cooperation, market cooperation, want to know about AITIME, welcome to contact us. ",
-              mail: "mailbox：chenfang@aitime.credit ",
+              mail: "mail：chenfang@aitime.credit ",
               phone: "Tel：+86 17155944982"
             },
             {
@@ -147,7 +147,7 @@ export default {
               icon: "iconbangongshenling right",
               content:
                 "Business cooperation, we are eager to innovate and look forward to cooperate.",
-              mail: "mailbox：chenfang@aitime.credit ",
+              mail: "mail：chenfang@aitime.credit ",
               phone: "Tel：+86 17155944982"
             }
           ],
@@ -253,7 +253,7 @@ export default {
       text-align: center;
       padding-top: 130px;
       padding-bottom: 36px;
-      font-weight: bold;
+      font-weight: 100;
       &::before {
         content: " ";
         display: inline-block;
@@ -334,7 +334,7 @@ export default {
       color: #576671;
       text-align: center;
       padding-bottom: 36px;
-      font-weight: bold;
+      font-weight: 100;
       &::before {
         content: " ";
         display: inline-block;
