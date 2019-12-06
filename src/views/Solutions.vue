@@ -5,9 +5,11 @@
       <img class="img" src="../../public/images/soluMultiply@2x.png" />
       <h3 class="title3">{{currentData[language].timeTitle}}</h3>
       <p class="text-1 text">{{currentData[language].timeContent}}</p>
-      <div class="more-icon"></div>
+      <div class="more-icon">
+          <a href="#two" class="more-btn"></a>
+      </div>
     </section>
-    <section class="product-section">
+    <section class="product-section" id="two">
       <h3 class="title-3">{{currentData[language].productTitle1}}</h3>
       <ul class="list clearfix">
         <li class="item">
@@ -283,6 +285,11 @@ export default {
       background-size: 40px 32px;
       cursor: pointer;
       animation: bounce-down 1s linear infinite;
+      .more-btn {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 
