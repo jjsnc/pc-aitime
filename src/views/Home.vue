@@ -2,7 +2,7 @@
   <div class="home-page">
     <myHead @changeLanguage="changeLanguage"></myHead>
     <section class="time-section">
-      <img class="img" src="../../public/images/home-bg-1@2x.png" />
+      <img class="img" src="../../public/images/home-bg-2@2x.png" />
       <h3 class="title3">{{currentData[language].timeTitle}}</h3>
       <a href="#two" class="more-btn btn">{{currentData[language].timeBtnText}}</a>
       <div class="more-icon">
