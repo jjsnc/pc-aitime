@@ -3,7 +3,7 @@
     <div class="wrap">
       <div class="left-area">
         <img class="img" src="../../../public/images/header-logo@2x.png" width="144px;height:28px;" />
-        <a class="login-btn" href="javascript:;">{{currentData[language][3]}}</a>
+        <!-- <a class="login-btn" href="javascript:;">{{currentData[language][3]}}</a> -->
       </div>
       <div class="middle-area"></div>
       <div class="right-area">
