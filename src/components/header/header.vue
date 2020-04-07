@@ -3,6 +3,7 @@
     <div class="wrap">
       <div class="left-area">
         <img class="img" src="../../../public/images/header-logo@2x.png" width="144px;height:28px;" />
+        <a class="login-btn" href="javascript:;">{{currentData[language][3]}}</a>
       </div>
       <div class="middle-area"></div>
       <div class="right-area">
@@ -33,8 +34,8 @@ export default {
   data() {
     return {
       currentData: {
-        zh: ["首页", "解决方案", "关于我们"],
-        le: ["HOME", "SOLUTIONS", "COMPANY"]
+        zh: ["首页", "解决方案", "关于我们","登陆"],
+        le: ["HOME", "SOLUTIONS", "COMPAN", "LOG IN"]
       },
       englishData: {
         title: "AITIME"
@@ -60,7 +61,7 @@ export default {
       this.language = localStorage.getItem("language");
       this.currentCountry = languageObj[country];
       this.selectFlag = false;
-      this.$emit('changeLanguage',this.language);
+      this.$emit("changeLanguage", this.language);
     },
     showSelect() {
       this.selectFlag = true;
@@ -84,6 +85,18 @@ export default {
       flex: 220px;
       .img {
         vertical-align: middle;
+      }
+      .login-btn {
+        display: inline-block;
+        text-align: center;
+        width: 94px;
+        height: 39px;
+        line-height: 39px;
+        margin-left: 16px;
+        background: rgba(23, 218, 163, 0.7);
+        border-radius: 6px;
+        font-size: 16px;
+        color: #fff;
       }
       .title {
         color: #fff;
